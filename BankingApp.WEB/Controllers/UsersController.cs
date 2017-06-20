@@ -3,6 +3,7 @@ using BankingApp.BLL.Interfaces;
 
 namespace BankingApp.WEB.Controllers
 {
+    [Authorize]
     public class UsersController : ApiController
     {
         IUserService userService;

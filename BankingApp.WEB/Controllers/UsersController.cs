@@ -18,5 +18,13 @@ namespace BankingApp.WEB.Controllers
                 return Ok(user);
             return NotFound();
         }
+
+        public IHttpActionResult GetUserByName(string name)
+        {
+            var user = userService.GetUserByName(name);
+            if (user != null)
+                return Ok(user);
+            return NotFound();
+        }
     }
 }

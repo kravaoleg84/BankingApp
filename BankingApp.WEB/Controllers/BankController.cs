@@ -13,7 +13,7 @@ namespace BankingApp.WEB.Controllers
     [Authorize]
     public class BankController : ApiController
     {
-        private UserDTO CurrentUser { get; set; }
+        private UserDTO CurrentUser { get { return this.getCurrentUser(); } }
         private UserDTO getCurrentUser()
         {
             HttpRequestMessage request = this.Request;

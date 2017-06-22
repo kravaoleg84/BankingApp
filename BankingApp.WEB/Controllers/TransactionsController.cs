@@ -12,9 +12,9 @@ namespace BankingApp.WEB.Controllers
             userService = service;
         }
 
-        public IHttpActionResult Get(int userId)
+        public IHttpActionResult Get(string userName)
         {
-            var transactions = userService.GetTransactions(userId);
+            var transactions = userService.GetTransactions(userName);
             return Ok(transactions);
         }
     }

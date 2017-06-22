@@ -12,7 +12,7 @@ namespace BankingApp.BLL.Interfaces
         string DepositMoney(int id, double money);
         string WithdrawMoney(int id, double money);
         string TransferMoney(int fromUserId, string name, double money);
-        IEnumerable<TransactionDTO> GetTransactions(int id);
+        IEnumerable<TransactionDTO> GetTransactions(string userName);
         void AddTransaction(int userId, double sum, TransactionName name, string toUser, string fromUser);
         void AddUser(string userName, string password);
         void Dispose();

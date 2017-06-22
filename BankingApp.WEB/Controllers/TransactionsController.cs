@@ -1,10 +1,5 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
+﻿using System.Web.Http;
 using BankingApp.BLL.Interfaces;
-using BankingApp.BLL.ViewModels;
 
 namespace BankingApp.WEB.Controllers
 {
@@ -16,9 +11,9 @@ namespace BankingApp.WEB.Controllers
             userService = service;
         }
 
-        public IHttpActionResult Get(int id)
+        public IHttpActionResult Get(int userId)
         {
-            var transactions = userService.GetTransactions(id);
+            var transactions = userService.GetTransactions(userId);
             return Ok(transactions);
         }
     }

@@ -129,9 +129,9 @@ namespace BankingApp.BLL.Services
             Database.Save();
         }
 
-        public IEnumerable<TransactionDTO> GetTransactions(int id)
+        public IEnumerable<TransactionDTO> GetTransactions(int userId)
         {
-            var user = Database.User.Get(id);
+            var user = Database.User.Get(userId);
             if (user != null)
             {
                 var transactions = Database.Transaction.Find(t => t.UserId == user.Id).ToList();

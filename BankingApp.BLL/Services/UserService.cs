@@ -75,7 +75,7 @@ namespace BankingApp.BLL.Services
                 User user = Database.User.Get(id);
             if (user != null)
             {
-                if (user.Balance < money)
+                if (user.Balance >= money)
                 {
                     user.Balance = new NewBalance(money).Withdraw(user.Balance);
                     Database.User.Update(user);
@@ -93,7 +93,7 @@ namespace BankingApp.BLL.Services
             if (!String.IsNullOrEmpty(name))
             {
                 User fromUser = Database.User.Get(fromUserId);
-                if (fromUser.Balance < money)
+                if (fromUser.Balance >= money)
                 {
                     User toUser = Database.User.FindByName(u => u.UserName == name);
                     if (toUser != null)

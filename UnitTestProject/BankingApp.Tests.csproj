@@ -44,6 +44,8 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -63,6 +65,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BankingApp.BLL\BankingApp.BLL.csproj">
+      <Project>{7b2f9674-53de-4cd3-9871-e6090ce098f5}</Project>
+      <Name>BankingApp.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BankingApp.WEB\BankingApp.WEB.csproj">
+      <Project>{c0000864-caaa-4fbd-b751-b8c4bf1b3691}</Project>
+      <Name>BankingApp.WEB</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

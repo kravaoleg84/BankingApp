@@ -44,6 +44,10 @@ namespace BankingApp.DAL.Repositories
         {
             return db.Transaction.Where(predicate).FirstOrDefault();
         }
+        public Transaction FindByName(Func<Transaction, Boolean> predicate)
+        {
+            return db.Transaction.Where(predicate).FirstOrDefault();
+        }
         public void Delete(int id)
         {
             Transaction tr = db.Transaction.Find(id);

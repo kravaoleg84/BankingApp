@@ -1,0 +1,25 @@
+﻿<div class="col-md-6 col-md-offset-3">
+    <h3>List of your transactions</h3>
+    <div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>transaction</th>
+                    <th>sum</th>
+                    <th>date</th>
+                    <th>fromUser</th>
+                    <th>toUser</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let tr of transactions;">
+                    <td>{{tr.name}}</td>
+                    <td>{{tr.sum}}</td>
+                    <td>{{tr.createDate}}</td>
+                    <td>{{tr.fromUserName}}</td>
+                    <td>{{tr.toUserName}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

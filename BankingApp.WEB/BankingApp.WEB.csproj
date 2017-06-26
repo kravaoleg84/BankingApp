@@ -273,10 +273,6 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\WebApplication11\WebApplication11\BankingApp.UI.csproj">
-      <Project>{6849edce-c169-4fb9-b915-468d85f82819}</Project>
-      <Name>BankingApp.UI</Name>
-    </ProjectReference>
     <ProjectReference Include="..\BankingApp.BLL\BankingApp.BLL.csproj">
       <Project>{7b2f9674-53de-4cd3-9871-e6090ce098f5}</Project>
       <Name>BankingApp.BLL</Name>

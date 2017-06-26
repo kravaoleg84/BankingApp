@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingApp.BLL", "BankingAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingApp.Tests", "BankingApp.Tests\BankingApp.Tests.csproj", "{BC5A7AD3-1F63-4EC9-AB39-07A17700485F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingApp.UI", "..\WebApplication11\WebApplication11\BankingApp.UI.csproj", "{6849EDCE-C169-4FB9-B915-468D85F82819}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingApp.UI1", "..\WebApplication11\WebApplication11\BankingApp.UI1.csproj", "{50C7C4F7-F4A4-417F-AE3E-53C4DD87CDCA}"
 EndProject
 Global
@@ -37,10 +35,6 @@ Global
 		{BC5A7AD3-1F63-4EC9-AB39-07A17700485F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC5A7AD3-1F63-4EC9-AB39-07A17700485F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC5A7AD3-1F63-4EC9-AB39-07A17700485F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6849EDCE-C169-4FB9-B915-468D85F82819}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6849EDCE-C169-4FB9-B915-468D85F82819}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6849EDCE-C169-4FB9-B915-468D85F82819}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6849EDCE-C169-4FB9-B915-468D85F82819}.Release|Any CPU.Build.0 = Release|Any CPU
 		{50C7C4F7-F4A4-417F-AE3E-53C4DD87CDCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{50C7C4F7-F4A4-417F-AE3E-53C4DD87CDCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50C7C4F7-F4A4-417F-AE3E-53C4DD87CDCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
